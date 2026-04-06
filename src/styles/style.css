@@ -241,10 +241,7 @@ html{
     border: none;
     height: .5px;
 }
-.menu-bar li:last-child{
-    position: absolute;
-    bottom: 0;
-}
+
 .main-dashboard{
     padding: 1%;
     display: grid;
