@@ -246,8 +246,6 @@ html{
     grid-template-areas: 
     "box-2 box-2 box-2 box-1"
     "box-2 box-2 box-2 box-1"
-    "box-3 box-3 box-3 box-1"
-    "box-3 box-3 box-3 box-1"
     ;
 }
 .dashboard-grid > *{
@@ -283,7 +281,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--bg-clr); */
     color: var(--pale-accent-clr);
 }
 .profile h5{
