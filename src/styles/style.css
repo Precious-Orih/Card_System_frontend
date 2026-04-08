@@ -151,9 +151,7 @@ html{
     text-wrap: no-wrap;
 }
 .menu-bar.close span{
-    /* overflow: hidden; */
     display: none;
-    /* transition: 500ms ease-in-out; */
 }
 .menu-bar.close a{
     width: 45px;
@@ -304,6 +302,8 @@ html{
 }
 .hidden{
     display: none;
+    visibility: hidden;
+    opacity: 0%;
 }
 
 /* End of dashboard.html */
