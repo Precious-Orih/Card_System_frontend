@@ -568,6 +568,7 @@ nav {
 
 .no-scroll {
     position: fixed;
+    overflow-y: hidden;
     height: 100vh;
 }
 
