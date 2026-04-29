@@ -316,6 +316,7 @@ nav {
     overflow-y: auto;
     z-index: 1;
     cursor: pointer;
+    overscroll-behavior: contain;
 }
 #pop-up {
     background-color: var(--text-clr);
@@ -567,8 +568,7 @@ nav {
 }
 
 .no-scroll {
-    position: fixed;
-    overflow-y: hidden;
+    overflow: hidden;
     height: 100vh;
 }
 
