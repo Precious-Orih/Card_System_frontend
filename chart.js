@@ -44,10 +44,6 @@ let percentTextColor; // border color
             }
         };
 
-    let theChart = document.getElementById(chartId);
-    let percentFont = window.getComputedStyle(theChart).maxWidth;
-    let percentTextFont = parseInt(percentFont);
-    console.log(percentTextFont);
     const ctx = document.getElementById(chartId);
         return new Chart(ctx, {
         type: 'pie',
@@ -78,10 +74,11 @@ let percentTextColor; // border color
                 },
                 counter: {
                     fontColor: percentTextColor,
-                    fontSize: (percentTextFont / 6),
+                    fontSize: 30,
                     fontFamily: 'sans-serif',
                 },
             },
+            responsive: true,
         },
         plugins: [counter],
 
