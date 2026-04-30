@@ -1,0 +1,20 @@
+:root{
+    --base-clr: #2f4156;
+    --pale-base-clr: #445d7a;
+    --dark-base-clr: #263447;
+    --accent-clr: #5d778e;
+    --pale-accent-clr: #809ab1;
+    --dark-accent-clr: #4c6274;
+    --text-clr: #ffffff;
+    --bg-clr: #dce8f1;
+}
+
+*{
+    font-family: "Commissioner", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
