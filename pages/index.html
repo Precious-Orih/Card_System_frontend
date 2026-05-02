@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./src/styles/style.css">
-        <link rel="icon" href="./assets/images/small logo with circle.png">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../assets/images/small logo with circle.png">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Dashboard</title>
     </head>
     <body>
-        <div class="dashboard">
-            <div class="menu-bar">
+            <div class="menu-bar close">
                     <ul>
                         <li>
                             <a href="#" id="toggle">
@@ -67,7 +66,7 @@
             </div>
             <div class="main-dashboard">
                 <nav>
-                    <img src="./assets/images/small logo with circle.png" alt="small-logo">
+                    <img src="../assets/images/small logo with circle.png" alt="small-logo">
                     <h1>Dashboard</h1>
                     <span class="right">
                         <a href="#" id="user" class="hidden">
@@ -77,7 +76,7 @@
                 </nav>
                 <div class="dashboard-grid">
                     <div class="profile display">
-                        <img src="assets/images/profile.png" alt="profile">
+                        <img src="../assets/images/profile.png" alt="profile">
                         <h3>Name</h3>
                         <h4>Status</h4>
                         <hr>
@@ -137,10 +136,7 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-                                      
-                
-                
+                    </div>                
                     <div class="container-1">
                             <div class="timetable-responsive">
                                 <div class="timetable-scroll">
@@ -351,95 +347,42 @@
                                 
                             </div>
                     </div>
-                    <div class="container-2">
+                    <div class="container-2 show">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8543.326090613542!2d7.4024757221349695!3d9.018007022235391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e7506cc098c9f%3A0x713db1c45e39ed24!2sNile%20University%20of%20Nigeria!5e0!3m2!1sen!2sng!4v1775732032284!5m2!1sen!2sng" 
                             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                        <div id="pop-up" class="hidden">
-                            <div class="building-name">
-                                <h2>Building Name</h2>
-                                <i class="bx bx-x" id="close-popup"></i>
-                            </div>
-                            <div class="class-list">
-                                <ul>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">001</span>
-                                        <span class="use-status free">free</span>
-                                    </li>
-                                    <li>
-                                        <span class="class-id">002</span>
-                                        <span class="use-status in-use">in use</span>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
                     </div>
+                    <div id="pop-up" class="hidden">
+                        <div class="building-name">
+                            <h2>Building Name</h2>
+                            <i class="bx bx-x" id="close-popup"></i>
+                        </div>
+                        <div class="class-list">
+                            <ul>
+                                <li>
+                                    <span class="class-id">001</span>
+                                    <span class="use-status free">free</span>
+                                </li>
+                                <li>
+                                    <span class="class-id">002</span>
+                                    <span class="use-status in-use">in use</span>
+                                </li>
+                                <li>
+                                    <span class="class-id">003</span>
+                                    <span class="use-status free">free</span>
+                                </li>                         
+                            </ul>
+                        </div>
+
+                    </div>
+                    
                 </div>      
             </div>
             <div class="profilePopup hidden">
                 <i class='bx bx-x'></i>
-                <img src="assets/images/profile.png" alt="profile">
+                <img src="../assets/images/profile.png" alt="profile">
                 <h3>Name</h3>
                 <hr>
-
                 <div class="info">
                     <h5>Information</h5>
                     <div class="profile-table-container">
@@ -499,8 +442,8 @@
             </div>
             <div id="overlay" class="hidden"></div>
 
-        </div>
+
         <script src="https://kit.fontawesome.com/88406e148e.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
