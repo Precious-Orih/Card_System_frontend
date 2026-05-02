@@ -17,6 +17,7 @@ const overlay = document.getElementById('overlay'); //the overlay
 const body = document.getElementsByTagName('body'); //the body
 
 
+
 button.onclick = function () {
     menubar.classList.toggle('close');
 };
@@ -54,9 +55,6 @@ show.forEach(element => {
     element.addEventListener('click', showPopup);
 });
 hide.addEventListener('click', hidePopup);
-
-
-
 
 
 

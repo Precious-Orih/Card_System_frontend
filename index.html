@@ -9,10 +9,11 @@
         <title>Dashboard</title>
     </head>
     <body>
+        <div class="dashboard">
             <div class="menu-bar">
                     <ul>
                         <li>
-                            <a id="toggle">
+                            <a href="#" id="toggle">
                                 <i class='bx bx-menu'></i>
                                 <span>Menu</span>
                                 
@@ -69,7 +70,7 @@
                     <img src="./assets/images/small logo with circle.png" alt="small-logo">
                     <h1>Dashboard</h1>
                     <span class="right">
-                        <a id="user" class="hidden">
+                        <a href="#" id="user" class="hidden">
                             <i class="bx bx-user-circle"></i>
                         </a>
                     </span>
@@ -82,47 +83,63 @@
                         <hr>
                         <div class="info">
                             <h5>Information</h5>
-                            <div class="table container">
+                            <div class="profile-table-container">
                                 <table>
-                                    <tbody>
-                                        <tr>
-                                            <td 1 bgcolor="#e9ecef" style="color: white">Student ID</td>
-                                            <td bgcolor="#F4F5F7">242120080</td>
-                                        </tr>  
-                                        <tr>
-                                            <td 2 bgcolor="#e9ecef" style="color: white">Department</td>
-                                            <td bgcolor="#F4F5F7">Software Engineering-EN</td>
-                                        </tr>
-                                        <tr>
-                                            <td 3 bgcolor="#e9ecef" style="color: white">Specialization</td>
-                                            <td bgcolor="#F4F5F7">Not available</td>
-                                        </tr>
-                                        <tr>
-                                            <td  4 bgcolor="#e9ecef" style="color: white">Level</td>
-                                            <td bgcolor="#F4F5F7">2</td>
-                                        </tr>
-                                        <tr>
-                                            <td  5 bgcolor="#e9ecef" style="color: white">Supervisor</td>
-                                            <td bgcolor="#F4F5F7">Emmanuel Aderemi</td>
-                                        </tr>
-                                        <tr>
-                                            <td  6 bgcolor="#e9ecef" style="color: white">Email</td>
-                                            <td bgcolor="#F4F5F7">jessiajene77@gmail.com</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td 7 bgcolor="#e9ecef" style="color: white">Birthdate</td>
-                                            <td bgcolor="#F4F5F7">18-APR-08</td>
-                                        </tr>
-                                        <tr>
-                                            <td 8 bgcolor="#e9ecef" style="color: white">Mobile</td>
-                                            <td bgcolor="#F4F5F7">07040320308</td>
-                                        </tr>
-                                    </tbody>
+                                    <tr>
+                                        <td><i class="fa-solid fa-id-card"></i></td>
+                                        <td>
+                                            <span>Student Id:</span>
+                                            <span>242120131</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-building"></i></td>
+                                        <td>
+                                            <span>Department:</span>
+                                            <span>Software Engineering</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-cubes"></i></td>
+                                        <td>
+                                            <span>Level:</span>
+                                            <span>200 Level</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-user-pen"></i></td>
+                                        <td>
+                                            <span>Supervisor:</span>
+                                            <span>#########</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-cake"></i></td>
+                                        <td>
+                                            <span>Birthday:</span>
+                                            <span>#########</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-envelope"></i></td>
+                                        <td>
+                                            <span>Email:</span>
+                                            <span>#########</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-phone"></i></td>
+                                        <td>
+                                            <span>Phone Number:</span>
+                                            <span>#########</span>
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
-                        </div> 
+                        </div>
                     </div>
+                                      
+                
                 
                     <div class="container-1">
                             <div class="timetable-responsive">
@@ -173,7 +190,7 @@
                                                     </div>
                                                 </td>
                                             
-                                                <!-- THURSDAY 9-11: MTH 202 (section 1) Actually from data: MTHI 202 11AM-1PM, but 9-11 on thursday? wait correction: Original shows THU 11AM-1PM MTH202, but no 9-11am course on thursday. So empty (free) -->
+                                                <!-- THURSDAY 9-11: MTH 202 (section 1) Actually from data: MTH 202 11AM-1PM, but 9-11 on thursday -->
                                                 <td class="empty-cell">
                                                     <div style="color:#9aaeb9; font-size:0.7rem; text-align:center; padding: 8px 0;">— Free —</div>
                                                 </td>
@@ -193,7 +210,7 @@
                                             <tr>
                                                 <td class="time-slot">11:00 – 13:00</td>
                                                         
-                                                <!-- MONDAY 11-1: FREE (no course scheduled, COS 202 sections are 9-12 & 2-5 only, but 11-1 is part of 9-12? Actually original: COS202 9am-12pm covers part of this block, but we split in proper way. Monday 9-12 overlaps both 9-11 and 11-12. But we must respect schedule without duplication. Better: COS202 (section2) spans 9am-12pm (3hr). In this responsive design, we place it only in 9-11 block? That would cut duration. To be accurate: The original data: COS202 Monday 9am-12pm (3h). I'll represent correctly by merging? but table uses discrete blocks. Most logical: Show it in 9-11 block as main, then for 11-1 monday we put a continuation note? no— real schedule: from 9-12 same class. To avoid confusion, I'll place a consistent 'continuing' badge. But better to reflect accurate attendance: student attends same course from 9 to 12. So we show it spanning both 9-11 and 11-1 blocks. For integrity, monday 11-1 slot will show same COS202 with "Continues" indicator. -->
+                                                <!-- MONDAY 11-1: FREE (no course scheduled, COS 202 sections are 9-12 & 2-5 only -->
                                                 <td>
                                                     <div class="class-event border-cos">
                                                         <div class="course-code">COS 202 (cont.)</div>
@@ -213,7 +230,7 @@
                                                     </div>
                                                 </td>
                                             
-                                                <!-- WEDNESDAY 11-1: ENT 212 (12PM-2PM from original data) Actually ENT212 is 12pm-2pm wednesday, so 11-1 partially includes from 12 to 1pm. Show as core class -->
+                                                <!-- WEDNESDAY 11-1: ENT 212 (12PM-2PM from original data) Actually ENT212 is 12pm-2pm wednesday -->
                                                 <td>
                                                     <div class="class-event border-ent">
                                                         <div class="course-code">ENT 212</div>
@@ -223,20 +240,20 @@
                                                     </div>
                                                 </td>
                                             
-                                                <!-- THURSDAY 11-1: MTHI 202 (section 1) -->
+                                                <!-- THURSDAY 11-1: MTH 202 (section 1) -->
                                                 <td>
                                                     <div class="class-event border-mth">
-                                                        <div class="course-code">MTHI 202</div>
+                                                        <div class="course-code">MTH 202</div>
                                                         <div class="course-title">Mathematical Methods II (SECTION 1)</div>
                                                         <div class="lecturer"> Mathematics Dept.</div>
                                                         <div class="venue">📍 E027</div>
                                                     </div>
                                                 </td>
                                                 
-                                                <!-- FRIDAY 11-1: MTHI 202 (section 2) -->
+                                                <!-- FRIDAY 11-1: MTH 202 (section 2) -->
                                                 <td>
                                                     <div class="class-event border-mth">
-                                                        <div class="course-code">MTHI 202</div>
+                                                        <div class="course-code">MTH 202</div>
                                                         <div class="course-title">Mathematical Methods II (SECTION 2)</div>
                                                         <div class="lecturer"> Mathematics Dept.</div>
                                                         <div class="venue">📍 E027</div>
@@ -246,7 +263,7 @@
 
                                             <!-- BLOCK 3: 13:00 – 15:00 (1PM - 3PM) -->
                                             <tr>
-                                                <td class="time-slot">13:00 – 15:00</td>
+                                                    <td class="time-slot">13:00 – 15:00</td>
                                                             
                                                     <!-- MONDAY 1-3PM: COS 202 section 1 (2pm-5pm) - Original: COS202 (section1) Monday 2PM-5PM, so from 2pm to 3pm part of this block. Display as starting 2pm -->
                                                     <td>
@@ -258,7 +275,7 @@
                                                         </div>
                                                     </td>
                                                         
-                                                    <!-- TUESDAY 1-3PM: INS 204 continues (section 1: 11am–2pm covers 1-2pm) + section 2 from 2pm-5pm. For accuracy: INS204 (section1) ends at 2pm; section2 from 2pm. So 1-3pm: first hour section1, second hour section2. I'll represent combined -->
+                                                    <!-- TUESDAY 1-3PM: INS 204 continues (section 1: 11am–2pm covers 1-2pm) + section 2 from 2pm-5pm -->
                                                     <td>
                                                         <div class="class-event border-ins">
                                                             <div class="course-code">INS 204</div>
@@ -268,7 +285,7 @@
                                                         </div>
                                                     </td>
                                                         
-                                                    <!-- WEDNESDAY 1-3PM: ENT 212 (12-2pm) ends at 2pm. 1-2pm still class; then 2-3 free? Original ENT ends at 2pm, but 1-3 slot shows active from 1-2pm. I'll display ENT212 with note -->
+                                                    <!-- WEDNESDAY 1-3PM: ENT 212 (12-2pm) ends at 2pm. 1-2pm still class; then 2-3 free -->
                                                     <td>
                                                         <div class="class-event border-ent">
                                                             <div class="course-code">ENT 212</div>
@@ -285,7 +302,7 @@
                                                         
                                                     <!-- FRIDAY 1-3PM: no course (MTH202 11-1pm only). Free -->
                                                     <td class="empty-cell">
-                                                        <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> Self-study</div>
+                                                        <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> - Free -</div>
                                                     </td>
                                             </tr>
 
@@ -315,17 +332,17 @@
                                                         
                                                 <!-- WEDNESDAY 3-5PM: Nothing scheduled (after ENT212 ends at 2pm) Free -->
                                                 <td class="empty-cell">
-                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> Break / Lab work</div>
+                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> - Free -</div>
                                                 </td>
                                                         
                                                 <!-- THURSDAY 3-5PM: No courses (free) -->
                                                 <td class="empty-cell">
-                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> Assignment time</div>
+                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> - Free -</div>
                                                 </td>
                                                         
                                                 <!-- FRIDAY 3-5PM: No courses (free) -->
                                                 <td class="empty-cell">
-                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> Weekend prep</div>
+                                                    <div style="color:#9aaeb9; font-size:0.7rem; text-align:center;"> - Free -</div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -338,6 +355,82 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8543.326090613542!2d7.4024757221349695!3d9.018007022235391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e7506cc098c9f%3A0x713db1c45e39ed24!2sNile%20University%20of%20Nigeria!5e0!3m2!1sen!2sng!4v1775732032284!5m2!1sen!2sng" 
                             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
+                        <div id="pop-up" class="hidden">
+                            <div class="building-name">
+                                <h2>Building Name</h2>
+                                <i class="bx bx-x" id="close-popup"></i>
+                            </div>
+                            <div class="class-list">
+                                <ul>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">001</span>
+                                        <span class="use-status free">free</span>
+                                    </li>
+                                    <li>
+                                        <span class="class-id">002</span>
+                                        <span class="use-status in-use">in use</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>      
             </div>
@@ -345,54 +438,69 @@
                 <i class='bx bx-x'></i>
                 <img src="assets/images/profile.png" alt="profile">
                 <h3>Name</h3>
-                <h4>Status</h4>
                 <hr>
+
                 <div class="info">
                     <h5>Information</h5>
-                    <div class="table container">
+                    <div class="profile-table-container">
                         <table>
-                            <tbody>
-                                <tr>
-                                    <td 1 bgcolor="#e9ecef" style="color: white">Student ID</td>
-                                    <td bgcolor="#F4F5F7">242120080</td>
-                                </tr>  
-                                <tr>
-                                    <td 2 bgcolor="#e9ecef" style="color: white">Department</td>
-                                    <td bgcolor="#F4F5F7">Software Engineering-EN</td>
-                                </tr>
-                                <tr>
-                                    <td 3 bgcolor="#e9ecef" style="color: white">Specialization</td>
-                                    <td bgcolor="#F4F5F7">Not available</td>
-                                </tr>
-                                <tr>
-                                    <td  4 bgcolor="#e9ecef" style="color: white">Level</td>
-                                    <td bgcolor="#F4F5F7">2</td>
-                                </tr>
-                                <tr>
-                                    <td  5 bgcolor="#e9ecef" style="color: white">Supervisor</td>
-                                    <td bgcolor="#F4F5F7">Emmanuel Aderemi</td>
-                                </tr>
-                                <tr>
-                                    <td  6 bgcolor="#e9ecef" style="color: white">Email</td>
-                                    <td bgcolor="#F4F5F7">jessiajene77@gmail.com</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td 7 bgcolor="#e9ecef" style="color: white">Birthdate</td>
-                                    <td bgcolor="#F4F5F7">18-APR-08</td>
-                                </tr>
-                                <tr>
-                                    <td 8 bgcolor="#e9ecef" style="color: white">Mobile</td>
-                                    <td bgcolor="#F4F5F7">07040320308</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-id-card"></i></td>
+                                <td>
+                                    <span>Student Id:</span>
+                                    <span>242120131</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-building"></i></td>
+                                <td>
+                                    <span>Department:</span>
+                                    <span>Software Engineering</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-cubes"></i></td>
+                                <td>
+                                    <span>Level:</span>
+                                    <span>200 Level</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-user-pen"></i></td>
+                                <td>
+                                    <span>Supervisor:</span>
+                                    <span>#########</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-cake"></i></td>
+                                <td>
+                                    <span>Birthday:</span>
+                                    <span>#########</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i></td>
+                                <td>
+                                    <span>Email:</span>
+                                    <span>#########</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i></td>
+                                <td>
+                                    <span>Phone Number:</span>
+                                    <span>#########</span>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                 </div>
             </div>
             <div id="overlay" class="hidden"></div>
 
-    
+        </div>
+        <script src="https://kit.fontawesome.com/88406e148e.js" crossorigin="anonymous"></script>
         <script src="index.js"></script>
     </body>
 </html>
