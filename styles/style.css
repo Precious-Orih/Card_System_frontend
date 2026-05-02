@@ -154,9 +154,7 @@ nav {
 }
 .profile {
     grid-area: box-1;
-    display: flex; 
 }
-
 .profilePopup {
     position: fixed;
     top: 0%;
@@ -169,7 +167,6 @@ nav {
     scrollbar-color: var(--pale-accent-clr) var(--text-clr);
     scrollbar-width: none; 
 }
-
 .profile,
 .profilePopup {
     display: flex;
