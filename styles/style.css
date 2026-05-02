@@ -186,6 +186,8 @@ nav {
     i {
         font-size: 2.5rem;
         align-self: flex-end;
+        top: 0%;
+        position: sticky;
     }
 
     h3 {
